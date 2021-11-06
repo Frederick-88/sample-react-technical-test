@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+### Sample Technical Test of React Photo Album App - By Chen Frederick
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### To Run :
 
-## Available Scripts
+- `npm i`
+- `npm run start`
+- visit http://localhost:3000/
 
-In the project directory, you can run:
+#### Note :
 
-### `npm start`
+- Feel free to drop any feedback through LinkedIn - Chen Frederick =)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Tools / Dependencies Used :
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React & it's libraries
+- react-router-dom
+- node-sass
+- react-toastify
+- axios
+- local storage
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sample Technical Test Descriptions
 
-### `npm run build`
+#### PHOTO ALBUM WEBSITE
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Duration:
+4 days
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Details:
+Create Photo Album single page app using any library of your choice (We prefer React and
+Typescript).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### API endpoints:
+https://jsonplaceholder.typicode.com/albums
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/photos
 
-### `npm run eject`
+##### Pages:
+MAIN PAGE
+- Show a grid of albums, this grid should look good in all devices, every album should
+show its Album name with a link to the album page and the user page of the user who
+created the album
+- Filter Albums by Album Name
+- Filter Albums by User name
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ALBUM PAGE
+- Show photos that belong to the album
+- User can save a photo as favorite, the favorite list should be persistent after page changes.
+- Add a comment to photos, the comment should be persistent after page changes.
+- Show user name and email, link to the user page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+USER PAGE
+- Show full user information
+- Show user albums
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+MY FAVORITE PHOTOS
+- Show favorite photos and what album it belongs to
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### Extra Notes:
+- Pages should be responsive
+- Handle network errors
+- Use the URL as the single source of truth for routing
+- Album filtering can be done on the client-side
+- Simulate the favorite and comment features on the client-side application, there is no
+need to create backend service for this
+- Submit the source code only, no need to submit with the build result, as long the
+instruction on how to run it is clear.

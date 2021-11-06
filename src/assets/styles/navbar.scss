@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  .nav-item {
+    text-decoration: none;
+    color: rgb(64, 130, 252);
+    padding: 0 10px;
+    transition: border 0.3s;
+    font-weight: 600;
+
+    &:hover {
+      color: rgb(32, 93, 207);
+    }
+  }
+
+  .divider-line {
+    display: block;
+    height: 20px;
+    width: 2px;
+    background: rgb(64, 130, 252);
+    margin: 0 15px;
+  }
+}

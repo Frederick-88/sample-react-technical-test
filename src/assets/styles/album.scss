@@ -1,0 +1,289 @@
+.album {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .album-banner {
+    display: flex;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+
+    .banner-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #0a1f44;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 50px 0;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.25rem;
+        padding: 30px 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .album__user-detail {
+    margin: 40px;
+    width: 85%;
+
+    .text {
+      font-size: 1.125rem;
+      color: rgb(64, 130, 252);
+      font-weight: 600;
+
+      &.text--email {
+        margin: 5px 0 20px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .divider-line {
+    border: 2px solid rgb(196, 196, 196);
+    width: 100%;
+
+    &.line--with-margin {
+      margin: 40px 0;
+    }
+  }
+
+  .images-list-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 40px 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .album__images-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+
+    .image-container {
+      width: 15%;
+      padding: 10px;
+      position: relative;
+
+      @media only screen and (max-width: 1024px) {
+        width: 25%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 50%;
+      }
+
+      .image {
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      .favourite-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        outline: 0;
+        border: 0;
+        background: white;
+        color: red;
+        width: 30px;
+        height: 30px;
+        font-size: 1.125rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #e6e6e6;
+        }
+      }
+    }
+  }
+
+  .comment-section {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .comment-list {
+      margin: 20px 0 40px;
+      padding: 20px;
+      width: 60%;
+      background: #f7f7f7;
+      border-radius: 8px;
+      min-height: 200px;
+
+      @media only screen and (max-width: 600px) {
+        width: 80%;
+      }
+    }
+
+    .comment {
+      display: block;
+      border-radius: 4px;
+      padding: 15px 10px;
+      background: rgb(194, 215, 255);
+      color: #0a1f44;
+      font-size: 0.75rem;
+      margin: 10px 0;
+    }
+
+    .input-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input {
+        display: block;
+        padding: 10px 15px;
+        width: 60%;
+        border: 1px solid rgb(64, 130, 252);
+        border-radius: 4px;
+
+        @media only screen and (max-width: 600px) {
+          width: 80%;
+        }
+      }
+
+      .button {
+        display: block;
+        margin-top: 20px;
+        width: 200px;
+        padding: 10px 15px;
+        border: 0;
+        border-radius: 4px;
+        outline: 0;
+        background: rgb(64, 130, 252);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.album-card__container {
+  width: 25%;
+  padding: 0 15px 40px 15px;
+
+  @media only screen and (max-width: 1024px) {
+    width: 33%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 360px) {
+    width: 100%;
+  }
+}
+
+.album-card {
+  border-radius: 8px;
+  background-color: #eeeeee;
+  padding: 15px;
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 0.875rem;
+      margin-top: 10px;
+    }
+  }
+
+  .text {
+    font-size: 0.875rem;
+    margin-top: 10px;
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 5px;
+      font-size: 0.75rem;
+    }
+  }
+
+  .button-list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    @media only screen and (max-width: 600px) {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+.route-button {
+  display: block;
+  padding: 10px 5px;
+  text-align: center;
+  width: 50%;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: rgb(64, 130, 252);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: white;
+    color: rgb(64, 130, 252);
+  }
+
+  &.button--custom {
+    width: 250px;
+    font-size: 0.875rem;
+
+    &:hover {
+      background: #eeeeee;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-top: 5px;
+
+    &:not(.button--custom) {
+      padding: 8px 5px;
+    }
+  }
+}
