@@ -9,6 +9,9 @@
 #### Note :
 
 - Feel free to drop any feedback through LinkedIn - Chen Frederick =)
+- In first try, failed to deploy to netlify, so need to use these reference to fix the issue :
+a. https://stackoverflow.com/questions/68961586/i-am-trying-to-host-my-react-website-on-netlify-but-this-npm-install-error-comes
+b. https://stackoverflow.com/questions/64468843/netlify-deployment-failed-during-stage-building-site-build-script-returned-n
 
 #### Tools / Dependencies Used :
 
