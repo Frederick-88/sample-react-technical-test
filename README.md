@@ -24,9 +24,7 @@ b. https://stackoverflow.com/questions/64468843/netlify-deployment-failed-during
 
 ---
 
-### Sample Technical Test Descriptions
-
-#### PHOTO ALBUM WEBSITE
+### Sample Technical Test Descriptions - PHOTO ALBUM WEBSITE
 
 ##### Duration:
 4 days
