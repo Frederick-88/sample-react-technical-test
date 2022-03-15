@@ -1,14 +1,8 @@
-### Sample Technical Test of React Photo Album App - By Chen Frederick
-
-#### To Run :
-
-- `npm i`
-- `npm run start`
-- visit http://localhost:3000/
+### Sample Technical Test of React Photo Album App - Finished By Chen Frederick
 
 #### Note :
 
-- Feel free to drop any feedback through LinkedIn - Chen Frederick =)
+- Feel free to drop any feedback through LinkedIn ( Chen Frederick ) =)
 - In first try, failed to deploy to netlify, so need to use these reference to fix the issue : <br/>
 a. https://stackoverflow.com/questions/68961586/i-am-trying-to-host-my-react-website-on-netlify-but-this-npm-install-error-comes <br/>
 b. https://stackoverflow.com/questions/64468843/netlify-deployment-failed-during-stage-building-site-build-script-returned-n <br/>
@@ -68,3 +62,11 @@ MY FAVORITE PHOTOS
 need to create backend service for this
 - Submit the source code only, no need to submit with the build result, as long the
 instruction on how to run it is clear.
+
+---
+
+#### To Run :
+
+- `npm i`
+- `npm run start`
+- visit http://localhost:3000/
