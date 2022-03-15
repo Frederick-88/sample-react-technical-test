@@ -1,11 +1,5 @@
 ### Sample Technical Test of React Photo Album App - Finished By Chen Frederick
 
-#### To Run :
-
-- `npm i`
-- `npm run start`
-- visit http://localhost:3000/
-
 #### Note :
 
 - Feel free to drop any feedback through LinkedIn - Chen Frederick =)
@@ -68,3 +62,11 @@ MY FAVORITE PHOTOS
 need to create backend service for this
 - Submit the source code only, no need to submit with the build result, as long the
 instruction on how to run it is clear.
+
+---
+
+#### To Run :
+
+- `npm i`
+- `npm run start`
+- visit http://localhost:3000/
