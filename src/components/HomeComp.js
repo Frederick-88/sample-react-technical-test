@@ -21,9 +21,11 @@ const HomeComp = (props) => {
         .toLowerCase()
         .includes(albumQuery.toLowerCase());
 
-      const matchUsernameQuery = album.userDetail.name
-        .toLowerCase()
-        .includes(usernameQuery.toLowerCase());
+      const matchUsernameQuery =
+        album.userDetail &&
+        album.userDetail.name
+          .toLowerCase()
+          .includes(usernameQuery.toLowerCase());
 
       if (matchAlbumQuery && matchUsernameQuery) {
         return true;
