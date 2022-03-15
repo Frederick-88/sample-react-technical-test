@@ -10,6 +10,8 @@ const HomeComp = (props) => {
   // -------------------------------------
 
   const formattedAlbumData = () => {
+    if (!props.albumData.length) return [];
+
     props.albumData.forEach((album) => {
       const findUser = props.userData.find((user) => user.id === album.userId);
       const selectedUser = findUser || {};
