@@ -1,4 +1,4 @@
-### Sample Technical Test of React Photo Album App - By Chen Frederick
+### Sample Technical Test of React Photo Album App - Finished By Chen Frederick
 
 #### To Run :
 
