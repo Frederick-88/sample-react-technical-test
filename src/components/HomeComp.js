@@ -19,15 +19,15 @@ const HomeComp = (props) => {
     });
 
     const filteredData = props.albumData.filter((album) => {
+      if (!album.userDetail || !album.userDetail.name) return false;
+
       const matchAlbumQuery = album.title
         .toLowerCase()
         .includes(albumQuery.toLowerCase());
 
-      const matchUsernameQuery =
-        album.userDetail &&
-        album.userDetail.name
-          .toLowerCase()
-          .includes(usernameQuery.toLowerCase());
+      const matchUsernameQuery = album.userDetail.name
+        .toLowerCase()
+        .includes(usernameQuery.toLowerCase());
 
       if (matchAlbumQuery && matchUsernameQuery) {
         return true;
